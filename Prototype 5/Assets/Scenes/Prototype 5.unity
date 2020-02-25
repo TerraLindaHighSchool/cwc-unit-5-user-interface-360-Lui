@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 1374014793}
   - component: {fileID: 1374014792}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Score Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -928,6 +928,7 @@ MonoBehaviour:
   - {fileID: 999935350345492682, guid: 33b038af88561e24e9594dbe86479d73, type: 3}
   - {fileID: 8603966980349494037, guid: 90e1b7cf94f20ac469900c3a70186249, type: 3}
   - {fileID: 1416958664799733713, guid: 6eb5a301d0698d84da9ff7a79b0cd05a, type: 3}
+  scoreText: {fileID: 1374014792}
 --- !u!4 &2040821970
 Transform:
   m_ObjectHideFlags: 0
