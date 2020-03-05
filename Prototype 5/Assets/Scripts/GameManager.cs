@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class GameManager : MonoBehaviour
 {
     [SerializeField] private List<GameObject> targets;
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI gameOverText;
+    [SerializeField] private Button restartButton;
     public bool isGameActive;
     private int score;
     private float spawnRate = 1.0f;
@@ -48,10 +51,11 @@ public class GameManager : MonoBehaviour
     {
         gameOverText.gameObject.SetActive(true);
         isGameActive = false;
+        restartButton.gameObject.SetActive(true);
     }
 
     public void RestartGame()
-    {
+    {        
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
