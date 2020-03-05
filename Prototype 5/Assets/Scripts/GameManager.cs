@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TextMeshProUGUI scoreText;
     [SerializeField] private TextMeshProUGUI gameOverText;
     [SerializeField] private Button restartButton;
+    [SerializeField] private GameObject titleScreen;
     public bool isGameActive;
     private int score;
     private float spawnRate = 1.0f;
@@ -63,5 +64,7 @@ public class GameManager : MonoBehaviour
 
         StartCoroutine(SpawnTarget());        
         UpdateScore(0);
+
+        titleScreen.gameObject.SetActive(false);
     }
 }
